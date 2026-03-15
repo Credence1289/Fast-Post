@@ -221,6 +221,4 @@ A basic HTML frontend (`frontend/frontend.html`) is included for interacting wit
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
