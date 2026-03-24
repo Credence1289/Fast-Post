@@ -22,25 +22,37 @@ A RESTful API built with **FastAPI** for user authentication and post management
 ## 📁 Project Structure
 
 ```
-FastPost/
-├── backend/
-│   ├── .env                  # Environment variables (never push this!)
-│   ├── .env.example          # Template for environment variables
-│   ├── auth.py               # JWT token creation and decoding
-│   ├── create_table.py       # Script to initialize database tables
-│   ├── db_models.py          # SQLAlchemy ORM models (User, Post)
-│   ├── dbengine.py           # Database engine setup
-│   ├── gate.py               # Auth dependency (current_user guard)
-│   ├── hash.py               # Password hashing and verification
-│   ├── main.py               # FastAPI app and route definitions
-│   ├── models.py             # Pydantic schemas (request/response)
-│   └── session.py            # DB session management
-├── frontend/
-│   └── frontend.html         # Simple browser-based UI
-├── .gitignore
-└── requirements.txt
-```
-
+FastPost-Smart-Blogging-FastAPI/
+│── backend/
+│ │── init.py
+│ │── main.py 
+│ │
+│ ├── auth/ 
+│ │ ├── init.py
+│ │ ├── auth.py
+│ │ ├── gate.py
+│ │ └── hash.py
+│ │
+│ ├── db/ 
+│ │ ├── init.py
+│ │ ├── create_table.py
+│ │ ├── dbengine.py
+│ │ └── session.py
+│ │
+│ ├── schema/ 
+│ │ ├── init.py
+│ │ ├── db_models.py
+│ │ └── models.py
+│ │
+│ └── .env.example 
+│
+│── frontend/ 
+│ └── frontend.html
+│
+│── requirements.txt 
+│── README.md 
+│── .gitignore
+│── .gitattributes
 ---
 
 ## ⚙️ Setup & Installation
