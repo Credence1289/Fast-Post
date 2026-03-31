@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/Register", response_model=UserOut)
+@app.post("/register", response_model=UserOut)
 def register_user(user: UserIn, db: Session = Depends(get_db)):
     existing_user = (
         db.query(db_models.User)
